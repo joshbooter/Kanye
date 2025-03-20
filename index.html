@@ -32,16 +32,52 @@
             margin-bottom: 20px; /* Add space below the heading */
         }
 
+        /* Image container styling */
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; /* Add space between images */
+        }
+
         /* Image styling */
         img {
             border: 5px solid rgba(255, 255, 255, 0.8); /* Add a white border around the image */
             border-radius: 10px; /* Add rounded corners to the image */
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+            max-width: 100%; /* Ensure images don't overflow */
+        }
+
+        /* Caption styling */
+        .caption {
+            background-color: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background to the caption */
+            padding: 10px 20px; /* Add padding around the caption */
+            border-radius: 5px; /* Add rounded corners */
+            font-size: 1.2rem; /* Set font size */
+            margin-top: 10px; /* Add space above the caption */
         }
     </style>
 </head>
 <body>
     <h1>This is Kanye Martin</h1>
-    <img src="sun.jpg" alt="A picture of Kanye Martin" width="300">
+    <div class="image-container">
+        <!-- First image: sleepyboy.jpg -->
+        <div>
+            <img src="sleepyboy.jpg" alt="Sleepy Boy" width="300">
+            <div class="caption">Sleepy Boy</div>
+        </div>
+
+        <!-- Second image: rocks.jpg -->
+        <div>
+            <img src="rocks.jpg" alt="Rocks Graduate" width="300">
+            <div class="caption">Rocks Graduate</div>
+        </div>
+
+        <!-- Third image: rich.jpg -->
+        <div>
+            <img src="rich.jpg" alt="True Legends Never Die" width="300">
+            <div class="caption">True Legends Never Die</div>
+        </div>
+    </div>
 </body>
 </html>
